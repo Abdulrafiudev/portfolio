@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Gumela';
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: Gumela;
+  src: url(../public/Gumela\ Regular.otf);
+}

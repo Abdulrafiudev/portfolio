@@ -1,0 +1,94 @@
+.intro{
+  display: flex;
+  height: 80vh;
+  position: relative;
+  margin-top: 130px;
+  
+}
+.left_intro{
+  margin-left: 60px;
+  width: 70%;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.greetings{
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.dev_info{
+  font-size: 40px;
+  margin-bottom: 10px;
+  color:  orange;
+}
+.little_note{
+  font-weight: 100;
+  font-size: 14px;
+  color: gray;
+  line-height: 25px;
+}
+.hire_me_button{
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 20px;
+  width: 100px;
+  margin-top: 23px;
+}
+.hire_me_button:hover{
+  background: white;
+  cursor: pointer;
+  border: 1px solid var(--orange);
+  color: black;
+}
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 65px;
+  
+}
+.contain_icons{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.icons img{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.icons img:hover{
+  background: white;
+}
+.right_intro{
+  position: relative;
+  margin-right: 500px;
+  background-color: red;
+  
+}
+.boy{
+  z-index: 2;
+  position: absolute;
+  right: -360px;
+  top: -35px;
+  transform: scale(110%);
+}
+
+.vector_1{
+ position: absolute;
+ transform: scale(60%);
+ top: -120px;
+ left: -120px;
+}
+.vector_2{
+  position: absolute;
+  left: -120px;
+  transform: scale(55%);
+  top: -150px;
+}
