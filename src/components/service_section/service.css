@@ -1,0 +1,89 @@
+.services{
+  position: relative;
+  display: flex;
+  height: 80vh;
+ 
+}
+.left_services{
+  width: 50%;
+  
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.awesome{
+  font-size: 30px;
+}
+.service_note{
+  font-size: 28px;
+  color: orange;
+  
+}
+.service_ipsum{
+  font-weight: 100;
+  font-size: 14px;
+  color: gray;
+  line-height: 25px;
+  margin-top: 14px
+}
+.download{
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 20px;
+  width: 100px;
+  margin-top: 23px;
+}
+.download:hover{
+  background: white;
+  cursor: pointer;
+  border: 1px solid var(--orange);
+  color: black;
+}
+.right_services{
+
+  height: 80vh;
+  width: 50%;
+  position: relative;
+  margin-right: 10px;
+ 
+}
+.card_1{
+  position:absolute;
+  right: 120px
+}
+.card_2{
+  position:absolute;
+  top:250px;
+  right: 480px
+}
+.card_3{
+  position:absolute; 
+  top: 350px;
+  right: 150px
+}
+@media(max-width : 900px){
+  .services{
+    flex-direction: column;
+  }
+  .right_services{
+    margin-top: 40px;
+   
+
+    
+  }
+  .card_1{
+    right: -100px;
+  }
+  .card_2{
+    right: -100px;
+    top: 350px;
+  }
+  .card_3{
+    top: 700px;
+    right: -100px;
+  }
+}

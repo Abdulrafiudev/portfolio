@@ -1,6 +1,7 @@
 import React from "react"
-import Header from "./components/Header"
+import Header from "./components/Header/Header"
 import Intro from "./components/Intro/intro"
+import Services from "./components/service_section/service"
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <div>
         <Header />
         <Intro />
+        <Services />
       </div>
     </>
   )

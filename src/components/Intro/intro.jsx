@@ -7,6 +7,10 @@ import twitter from "../../../public/images/twitter.png"
 import boy from "../../../public/images/boy.png"
 import vector_1 from "../../../public/images/Vector1.png"
 import vector_2 from "../../../public/images/Vector2.png"
+import glasses_imoji from "../../../public/images/glassesimoji.png"
+import Floating_div from "../Floating div/floating_div";
+import thumb_up from "../../../public/images/thumbup.png"
+import crown from "../../../public/images/crown.png"
 
 
 
@@ -42,9 +46,8 @@ function Intro(){
             <img src={vector_1} className="vector_1"></img>
             <img src={vector_2} className="vector_2"></img>
             <img src={boy} className="boy"></img>
+            <img src = {glasses_imoji} className="glass_imoji"></img>
           
-          
-
         </div>
       </div>
     
