@@ -5,6 +5,7 @@ import Intro from "./components/Intro/intro"
 import Services from "./components/service_section/service"
 import Experience from "./components/Experience/Experience"
 import experience_array from "./components/Experience/array"
+import Work from "./components/Work/work"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           })}
          
         </div>
+        <Work />
       </div>
     </>
   )

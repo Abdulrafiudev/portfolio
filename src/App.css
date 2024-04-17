@@ -11,7 +11,7 @@
 
 @media (max-width : 900px){
   .experience_container{
-    margin-top: 700px;
+    margin-top: 1000px;
     flex-direction: column;
   }
 }
