@@ -8,7 +8,7 @@ import experience_array from "./components/Experience/array"
 import Work from "./components/Work/work"
 import Portfolio from "./components/portfolio/portfolio"
 import Wordings from "./components/wordings/wordings"
-
+import Testimonial from "./components/Testimonial/testimonial"
 
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
         <Work />
         <Wordings detail = "Recent Projects" content = "Portfolio" />
         <Portfolio />
+        <Testimonial />
        
       </div>
     </>

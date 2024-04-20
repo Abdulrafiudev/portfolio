@@ -1,4 +1,6 @@
 import React from "react";
+import {useDetectDevice} from 'react-device-detect'
+import { BrowserView, MobileView, isBrowser, isMobile, isTablet } from 'react-device-detect';
 import "./portfolio.css"
 import pie_chat from "../../../public/images/piechat.png"
 import keepers from "../../../public/images/keepers.png"
@@ -16,16 +18,20 @@ import 'swiper/css/scrollbar';
 
 
 let Portfolio = function(){
+
+
+
+  let slides_per_view = isMobile ? 1 : isTablet ? 2 : 3
   return(
     <>
     <div className="wrapper">
       
       <Swiper  modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={50}
-            slidesPerView={3}
-            pagination
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}  > 
+            spaceBetween={10}
+            slidesPerView={slides_per_view}
+            pagination={{ clickable: true }}
+            
+            > 
         <SwiperSlide>
           <img src={pie_chat} className="slider_images"/>
         </SwiperSlide>
