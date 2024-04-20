@@ -6,6 +6,9 @@ import Services from "./components/service_section/service"
 import Experience from "./components/Experience/Experience"
 import experience_array from "./components/Experience/array"
 import Work from "./components/Work/work"
+import Portfolio from "./components/portfolio/portfolio"
+import Wordings from "./components/wordings/wordings"
+
 
 
 function App() {
@@ -24,6 +27,9 @@ function App() {
          
         </div>
         <Work />
+        <Wordings detail = "Recent Projects" content = "Portfolio" />
+        <Portfolio />
+       
       </div>
     </>
   )

@@ -1,0 +1,31 @@
+.slider_images{
+  width: 19rem;
+  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+  border-radius: 19px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.first_slider_image{
+  margin-left: 50px;
+}
+.portfolio_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.portfolio_detail{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.portfolio_content{
+  color: orange;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 90px;
+}
+.wrapper .swiper-pagination-bullet-active{
+  background-color: orange;
+}

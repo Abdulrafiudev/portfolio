@@ -26,6 +26,7 @@
    margin-right: 80px;
    flex: 2;
    align-items: center;
+   justify-content: space-between;
 }
 ul{
   display: flex;
