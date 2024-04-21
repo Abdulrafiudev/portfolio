@@ -37,7 +37,7 @@
     width: 500px;
     height: auto;
     background: rgba(255, 255, 255, 0.26);
-    border: 5px solid orange;
+    border: 5px solid rgb(158, 158, 161);
     box-shadow: 0px 19px 60px rgb(0 0 0 / 8%);
     border-radius: 20px;
 }

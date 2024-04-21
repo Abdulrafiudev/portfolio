@@ -9,6 +9,7 @@ import Work from "./components/Work/work"
 import Portfolio from "./components/portfolio/portfolio"
 import Wordings from "./components/wordings/wordings"
 import Testimonial from "./components/Testimonial/testimonial"
+import Contact from "./components/contact/contact"
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Wordings detail = "Recent Projects" content = "Portfolio" />
         <Portfolio />
         <Testimonial />
+        <Contact />
        
       </div>
     </>

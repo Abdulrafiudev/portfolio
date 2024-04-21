@@ -13,11 +13,13 @@
 }
 .work_heading{
   font-size: 40px;
+  font-weight: bold;
 }
 .work_detail{
   margin-top: 5px;
   font-size: 35px;
   color: orange;
+  font-weight: bold;
 }
 .work_content{
   font-weight: 100;

@@ -13,10 +13,12 @@
 }
 .awesome{
   font-size: 30px;
+  font-weight: bold;
 }
 .service_note{
   font-size: 28px;
   color: orange;
+  font-weight: bold;
   
 }
 .service_ipsum{
