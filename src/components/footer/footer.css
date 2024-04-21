@@ -1,0 +1,34 @@
+.footer_container{
+  background-color: rgb(58, 58, 57);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40vh;
+  z-index: 1000;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.main_box{
+  margin-top: 300px;
+  position: relative;
+}
+.footer_icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.footer_icons img{
+  transform: scale(0.6);
+}
+.x_icon{
+  height: 100px;
+}
+.footer_name{
+  color: white;
+}

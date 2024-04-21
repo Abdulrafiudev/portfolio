@@ -40,7 +40,7 @@ function Work(){
           
         </div>
         <div className="work_blue_circle"></div>
-          <div className="work_yellow_circle"></div>
+        <div className="work_yellow_circle"></div>
       </div>
      </div>
     

@@ -10,6 +10,7 @@ import Portfolio from "./components/portfolio/portfolio"
 import Wordings from "./components/wordings/wordings"
 import Testimonial from "./components/Testimonial/testimonial"
 import Contact from "./components/contact/contact"
+import Footer from "./components/footer/footer"
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="app_wrapper">
         <Header />
         <Intro />
         <Services />
@@ -32,6 +33,7 @@ function App() {
         <Portfolio />
         <Testimonial />
         <Contact />
+        <Footer />
        
       </div>
     </>

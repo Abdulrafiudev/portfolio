@@ -8,9 +8,6 @@ import boy from "../../../public/images/boy.png"
 import vector_1 from "../../../public/images/Vector1.png"
 import vector_2 from "../../../public/images/Vector2.png"
 import glasses_imoji from "../../../public/images/glassesimoji.png"
-import Floating_div from "../Floating div/floating_div";
-import thumb_up from "../../../public/images/thumbup.png"
-import crown from "../../../public/images/crown.png"
 
 
 
