@@ -1,5 +1,5 @@
 .footer_container{
-  background-color: rgb(201, 196, 196);
+  background-color: orange;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,8 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  padding-top: 4rem;
+
 }
 .main_box{
   margin-top: 300px;
@@ -22,9 +24,13 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+ 
 }
 .footer_icons img{
   transform: scale(0.6);
+  background: white;
+  border-radius: 20%;
+  border: 2px dashed white;
 }
 .x_icon{
   height: 100px;

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import "./intro.css"
 import github from "../../../public/images/github.png"
 import instagram from "../../../public/images/instagram.png"
@@ -8,17 +8,19 @@ import boy from "../../../public/images/boy.png"
 import vector_1 from "../../../public/images/Vector1.png"
 import vector_2 from "../../../public/images/Vector2.png"
 import glasses_imoji from "../../../public/images/glassesimoji.png"
+import { context_theme } from "../../App";
+
 
 
 
 
 
 function Intro(){
-
+  let [is_dark] = useContext(context_theme)
   
   return(
     <>
-      <div className="intro">
+      <div className="intro" style={{backgroundColor: is_dark && "black"}}>
         <div className="left_intro">
           <div className="info">
             <span className="greetings"  >Hy! I Am </span>

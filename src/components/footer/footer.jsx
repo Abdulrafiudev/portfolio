@@ -3,7 +3,7 @@ import "./footer.css"
 import github from "../../../public/images/github.png"
 import instagram from "../../../public/images/instagram.png"
 import linkedin from "../../../public/images/linkedin.png"
-import twitter from "../../../public/images/twitter.png"
+
 
 function Footer(){
   return(
