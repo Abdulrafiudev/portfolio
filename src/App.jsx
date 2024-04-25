@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext, useEffect, useState } from "react"
 import "./App.css"
 import Header from "./components/Header/Header"
 import Intro from "./components/Intro/intro"
@@ -11,33 +11,65 @@ import Wordings from "./components/wordings/wordings"
 import Testimonial from "./components/Testimonial/testimonial"
 import Contact from "./components/contact/contact"
 import Footer from "./components/footer/footer"
+import { createContext } from "react"
 
+//This creates a context
+export let context_theme = createContext()
 
 function App() {
 
+ 
+  
+  let [is_dark, set_is_dark] = useState(retrieve_theme)
+
+  useEffect(() => {
+    save_theme()
+  }, [is_dark])
+  
+
+  function handle_toggle(){
+    set_is_dark(!is_dark)
+  }
+
+  function save_theme(){
+    localStorage.setItem(`theme_mode`, JSON.stringify(is_dark))
+  }
+
+  function retrieve_theme(){
+    let stored_theme = JSON.parse(localStorage.getItem(`theme_mode`))
+    return stored_theme ? stored_theme : false
+  }
 
   return (
+
+    // This enables us to pass values to the context which can be called anywhere in our program
     <>
-      <div className="app_wrapper">
+    
+    <context_theme.Provider value = {[is_dark, handle_toggle]}>
+      <div className="app_wrapper" data-theme = {is_dark && "dark"}>
         <Header />
         <Intro />
         <Services />
         <div className="experience_container">
           {experience_array.map((experience) => {
-            return  <Experience years = {experience.years} description = {experience.desription} detail = {experience.detail}/>
+            return  <Experience years = {experience.years} description = {experience.desription} detail = {experience.detail} darkmode ={is_dark} handle_darkmode = {handle_toggle}/>
           })}
          
         </div>
         <Work />
-        <Wordings detail = "Recent Projects" content = "Portfolio" />
+        <Wordings />
         <Portfolio />
         <Testimonial />
         <Contact />
         <Footer />
        
       </div>
+      </context_theme.Provider>
     </>
   )
 }
 
+
+
 export default App
+

@@ -1,7 +1,8 @@
 import React from "react";
 import "./contact.css"
 import axios from "axios"
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 
 
 
@@ -14,6 +15,15 @@ let Contact = function(){
     message : ""
   })
 
+  let [is_done, set_is_done] = useState(false)
+
+  useEffect(() => {
+    if (is_done){
+      form_message()
+    }
+  
+  }, [is_done])
+
   function handle_change(event){
     let {name, value} = event.target
     set_email_content((prev_value) => {
@@ -24,6 +34,14 @@ let Contact = function(){
         }
       )
     })
+  }
+
+  function handle_send(){
+    set_is_done(true)
+  }
+
+  function form_message(){
+    is_done ? alert(`Email sent`) : alert(`Email not sent`)
   }
 
   let data = {
@@ -39,10 +57,10 @@ let Contact = function(){
     
   }
 
- async function handle_submit(event){
+  function handle_submit(event){
   event.preventDefault()
   try{
-    let response = await  axios.post("https://api.emailjs.com/api/v1.0/email/send", {
+    let response =   axios.post("https://api.emailjs.com/api/v1.0/email/send", {
       service_id: "service_1w5byzw",
       template_id: "template_lgab6un",
       user_id: "5tqts9tVEIevlbcZM",
@@ -54,7 +72,6 @@ let Contact = function(){
       }
       
     })
-   console.log(response.data)
    
   set_email_content({
     username : "",
@@ -86,8 +103,9 @@ let Contact = function(){
             <input className="form_email" placeholder="Email" name="email"  onChange={handle_change} value={email_content.email}></input>
             <textarea  className="form_content" placeholder="message" name="message"  onChange={handle_change} value={email_content.message}></textarea>
             <div className="submit_container">
-              <button type="submit" className="submit_button"> send </button>
+              <button type="submit" className="submit_button" onClick={handle_send}> send </button>
             </div>
+           
             
           </form>
         </div>

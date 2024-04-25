@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./intro.css"
 import github from "../../../public/images/github.png"
 import instagram from "../../../public/images/instagram.png"
@@ -15,23 +15,26 @@ import glasses_imoji from "../../../public/images/glassesimoji.png"
 
 function Intro(){
 
+  
   return(
     <>
       <div className="intro">
         <div className="left_intro">
           <div className="info">
-            <span className="greetings">Hy! I Am </span>
+            <span className="greetings"  >Hy! I Am </span>
             <span className="dev_info"> Abdulrafiu Ibrahim </span>
             <span className="little_note"> Frontend Developer with high level of experience in web designing<br></br>
             and development, producting the Quality work </span>
-
-            <button className="hire_me_button"> Hire me </button>
+            <div className="hire_me_container">
+             <button className="hire_me_button"> Hire me </button>
+            </div>
+          
             <div className="icons"> 
               <div className="contain_icons">
                 <img src={github}></img>
                 <img src={instagram}></img>
                 <img src={linkedin}></img>
-                <img src={twitter} className="twitter"></img>
+               
               </div>
              
            </div>

@@ -100,3 +100,44 @@
   left: -200px;
   top: -70px;
 }
+@media(max-width: 900px){
+  .intro{
+    flex-direction: column;
+    gap: 100px;
+  }
+  .left_intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    width: 100%;
+    margin-left: 0;
+  }
+ .info span {
+    margin-left: 20px;
+ }
+ .little_note{
+  white-space: pre-wrap;
+  line-height: 30px;
+ }
+ .hire_me_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+ }
+ .hire_me_button{
+  justify-content: center;
+  align-items: center;
+ }
+ .contain_icons{
+  width: 100%;
+  justify-content: center;
+ 
+ }
+  .right_intro{
+    display: none;
+  }
+}

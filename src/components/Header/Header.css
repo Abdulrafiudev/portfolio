@@ -8,11 +8,13 @@
   height: 10vh;
   align-items: center;
   z-index: 2;
- 
+  
+  
 }
 
 .left_section{
   display: flex;
+  align-items: center;
   flex: 1;
   gap: 50px;
   margin-left: 60px;
