@@ -138,4 +138,8 @@
   .right_intro{
     display: none;
   }
+  .little_note{
+    font-weight: bold;
+    font-size: 16px;
+  }
 }

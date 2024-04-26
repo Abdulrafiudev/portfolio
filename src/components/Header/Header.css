@@ -129,6 +129,8 @@ ul li:hover{
     flex-direction: column;
     color: black;
     align-items: center;
+    transition: right 1s;
+
     
     
     
@@ -137,6 +139,7 @@ ul li:hover{
   .smaller_screen{
     right: 0;
     left: 0;
+    transition:  0.5s;
     
   }
   ul{
