@@ -9,8 +9,7 @@
   align-items: center;
   z-index: 2;
   margin-bottom: 130px;
-  
-  
+ 
 }
 
 .left_section{
@@ -19,6 +18,7 @@
   flex: 1;
   gap: 50px;
   margin-left: 60px;
+  
  
 }
 .dev_name{
@@ -30,6 +30,8 @@
    flex: 2;
    align-items: center;
    justify-content: space-between;
+  
+  
 }
 ul{
   display: flex;
@@ -55,5 +57,124 @@ ul li:hover{
   background: white;
   cursor: pointer;
   border: 1px solid var(--orange);
-  color: var(--orange);
+  color: black;
+}
+.smaller_screen_menu{
+  display: none;
+}
+.smaller_screen_exit{
+  display: none;
+}
+@media (max-width){
+  .left_section{
+    margin-left: 20px;
+    gap: 15px;
+  }
+  .smaller_screen{
+    display: none;
+  }
+  .right_section{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-right: 0;
+    width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    
+    
+ 
+  }
+  ul{
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: start;
+    padding-top: 150px;
+    align-items: center;
+    margin-right: 0;
+   
+
+   
+  }
+  .small_contact{
+ 
+    padding-bottom: 120px;
+  }
+  .contact_button{
+    margin-left: 0;
+    
+   
+  }
+}
+@media (max-width: 500px){
+  .left_section{
+    margin-left: 20px;
+    gap: 15px;
+  }
+  
+  .right_section{
+    
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    right: -1000px;
+    margin-right: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    
+    
+    
+ 
+  }
+  .smaller_screen{
+    right: 0;
+    left: 0;
+    
+  }
+  ul{
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: start;
+    padding-top: 130px;
+    align-items: center;
+    margin-right: 0;
+   
+
+   
+  }
+  .small_contact{
+ 
+    padding-bottom: 120px;
+  }
+  .contact_button{
+    margin-left: 0;
+    
+   
+  }
+  .smaller_screen_menu{
+    display: initial;
+    margin-right: 30px;
+    transform: scale(1.2);
+    
+  }
+  .smaller_screen_disapper{
+    display: none;
+  }
+  .smaller_screen_exit{
+    display: initial;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    transform: scale(1.5);
+    cursor: pointer;
+  }
 }

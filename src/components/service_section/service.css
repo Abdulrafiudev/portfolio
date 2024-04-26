@@ -12,11 +12,11 @@
   margin-left: 100px;
 }
 .awesome{
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
 }
 .service_note{
-  font-size: 28px;
+  font-size: 34px;
   color: orange;
   font-weight: bold;
   
@@ -87,5 +87,15 @@
   .card_3{
     top: 700px;
     right: -120px;
+  }
+  .left_services{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 0;
+    align-items: center;
+  }
+  .service_ipsum{
+    text-align: start;
+    margin-left: 20px;
   }
 }

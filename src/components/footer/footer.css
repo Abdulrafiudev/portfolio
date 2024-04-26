@@ -6,13 +6,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  height: 40vh;
+  height: 30vh;
   z-index: 1000;
   border-radius: 2px;
   align-items: center;
   justify-content: center;
   gap: 10px;
   padding-top: 4rem;
+  border-radius: 10px;
 
 }
 .main_box{
@@ -37,4 +38,16 @@
 }
 .footer_name{
   color: white;
+}
+@media (max-width: 900px){
+  .footer_container{
+    height: 20vh;
+    gap: 0px;
+    padding-top: 0;
+    
+  }
+  .footer_icons img{
+    transform: scale(0.5);
+  }
+
 }

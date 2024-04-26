@@ -40,3 +40,8 @@
    align-items: center;
    justify-content: center;
 }
+@media (max-width: 380px){
+  .slider_images{
+    width: 18rem;
+  }
+}

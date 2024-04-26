@@ -12,11 +12,11 @@
   margin-left: 120px;
 }
 .left_contact_note{
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
 }
 .left_contact_detail{
-  font-size: 30px;
+  font-size: 40px;
   color: orange;
   font-weight: bold;
 }
@@ -35,7 +35,7 @@ form{
 }
 .form_name{
   height: 2rem;
-  padding: 0.3em;
+  padding: 0.6em;
   outline: none;
   border: 2px solid orange;
   border-radius: 8px;
@@ -43,14 +43,14 @@ form{
 }
 .form_email{
   height: 2rem;
-  padding: 0.3em;
+  padding: 0.6em;
   outline: none;
   border: 2px solid orange;
   border-radius: 8px;
   font-size: 16px;   
 }
 .form_content{
-  padding: 0.3em;
+  padding: 0.6em;
   height: 6rem;
   text-align: start;
   outline: none;
@@ -85,4 +85,37 @@ form input::placeholder{
   align-items: center;
   justify-content: center;
  
+}
+@media (max-width:900px){
+  .contact_container{
+    flex-direction: column;
+  }
+  .left_contact{
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .left_contact_note{
+    font-size: 35px;
+  }
+  .left_contact_detail{
+    font-size: 34px;
+  }
+  .right_contact{
+    width: 100%;
+  }
+  form{
+    width: 90%;
+  
+  }
+  .form_name{
+    padding: 0.3em;
+  }
+  .form_email{
+    padding: 0.3em;
+  }
+  .form_content{
+    padding: 0.3em;
+  }
 }

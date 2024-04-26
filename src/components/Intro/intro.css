@@ -65,9 +65,7 @@
   width: 40px;
   cursor: pointer;
 }
-.icons img:hover{
-  background: white;
-}
+
 .right_intro{
   position: relative;
   margin-right: 500px;

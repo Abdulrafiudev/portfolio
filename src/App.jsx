@@ -27,6 +27,7 @@ function App() {
   }, [is_dark])
   
 
+
   function handle_toggle(){
     set_is_dark(!is_dark)
   }
@@ -39,6 +40,8 @@ function App() {
     let stored_theme = JSON.parse(localStorage.getItem(`theme_mode`))
     return stored_theme ? stored_theme : false
   }
+  
+  document.body.style.backgroundColor = is_dark ? "black" : "white"
 
   return (
 
@@ -58,6 +61,10 @@ function App() {
         </div>
         <Work />
         <Wordings />
+        <div className="portfolio_wrapper">
+          <span className="portfolio_note"> Recent Projects</span>
+          <span className="portfolio_detail"> Portfolio </span>
+        </div>
         <Portfolio />
         <Testimonial />
         <Contact />

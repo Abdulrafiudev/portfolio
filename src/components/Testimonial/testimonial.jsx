@@ -25,7 +25,8 @@ let Testimonial = function(){
           slidesPerView={1}
           pagination={{ clickable: true }}
           clickable = {true}
-          grabCursor={true}>
+          grabCursor={true}
+          spaceBetween={50}>
           
          
           {clients.map((client, index) => {
