@@ -20,11 +20,11 @@ export let context_theme = createContext()
 
 function App() {
   let [is_loading, set_is_loading] = useState(true)
-
+  //Preloader setting to false
   useEffect(() => {
     setTimeout(() => {
       set_is_loading(false)
-    }, 2000)
+    }, 3800)
   }, [])
   let [is_dark, set_is_dark] = useState(retrieve_theme)
 

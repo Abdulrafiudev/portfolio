@@ -1,10 +1,10 @@
-import React from "react";
-import "./work.css";
-import facebook from "../../../public/images/Facebook.png";
-import upwork from "../../../public/images/Upwork.png";
-import shopify from "../../../public/images/Shopify.png";
-import amazon from "../../../public/images/amazon.png";
-import { motion } from "framer-motion";
+import React from "react"
+import "./work.css"
+import facebook from "../../../public/images/Facebook.png"
+import upwork from "../../../public/images/Upwork.png"
+import shopify from "../../../public/images/Shopify.png"
+import amazon from "../../../public/images/amazon.png"
+import { motion } from "framer-motion"
 
 function Work() {
   return (
@@ -60,7 +60,7 @@ function Work() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default Work;
+export default Work
