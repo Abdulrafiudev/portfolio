@@ -11,18 +11,6 @@ let Contact = function () {
     message: "",
   })
 
-  let [is_done, set_is_done] = useState(false)
-
-  console.log(is_done)
-
-  useEffect(() => {
-    setTimeout(() => {
-      if (is_done) {
-        form_message()
-      }
-    }, 1000)
-  }, [is_done])
-
   function handle_change(event) {
     let { name, value } = event.target
     set_email_content(prev_value => {
@@ -31,17 +19,6 @@ let Contact = function () {
         [name]: value,
       }
     })
-  }
-
-  function handle_send() {
-    set_is_done(true)
-    setTimeout(() => {
-      set_is_done(false)
-    }, 2000)
-  }
-
-  function form_message() {
-    is_done ? alert(`Email sent`) : alert(`Email not sent`)
   }
 
   let data = {
@@ -100,6 +77,7 @@ let Contact = function () {
               name="username"
               onChange={handle_change}
               value={email_content.username}
+              required
             ></input>
             <input
               className="form_email"
@@ -107,6 +85,7 @@ let Contact = function () {
               name="email"
               onChange={handle_change}
               value={email_content.email}
+              required
             ></input>
             <textarea
               className="form_content"
@@ -114,6 +93,7 @@ let Contact = function () {
               name="message"
               onChange={handle_change}
               value={email_content.message}
+              required
             ></textarea>
             <div className="submit_container">
               <motion.button
@@ -122,7 +102,6 @@ let Contact = function () {
                 transition={{ duration: 0.1 }}
                 type="submit"
                 className="submit_button"
-                onClick={handle_send}
               >
                 {" "}
                 send{" "}
