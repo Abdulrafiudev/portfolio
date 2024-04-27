@@ -1,9 +1,8 @@
-import React from "react";
+import React from "react"
 import "./card.css"
 
-
-function Card(props){
-  return(
+function Card(props) {
+  return (
     <>
       <div className="card_container">
         <img src={props.emoji}></img>
@@ -11,7 +10,6 @@ function Card(props){
         <span className="span_detail"> {props.detail}</span>
         <a className="learn_more"> Learn More </a>
       </div>
-    
     </>
   )
 }

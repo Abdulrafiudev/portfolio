@@ -4,7 +4,6 @@ import profilePic2 from "../../../public/images/profile2.jpg";
 import profilePic3 from "../../../public/images/profile3.jpg";
 import profilePic4 from "../../../public/images/profile4.jpg";
 
-
 let clients = [
   {
     img: profilePic1,
@@ -26,6 +25,6 @@ let clients = [
     review:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
   },
-]
+];
 
-export default clients
+export default clients;
