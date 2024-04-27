@@ -12,7 +12,8 @@ import Testimonial from "./components/Testimonial/testimonial"
 import Contact from "./components/contact/contact"
 import Footer from "./components/footer/footer"
 import { createContext } from "react"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
+import Prelaoder from "./components/preloader/preloader"
 
 //This creates a context
 export let context_theme = createContext()
@@ -20,7 +21,13 @@ export let context_theme = createContext()
 function App() {
 
  
-  
+  let [is_loading, set_is_loading] = useState(true)
+
+  useEffect(()=> {
+    setTimeout(() => {
+       set_is_loading(false)
+    }, 10000)
+  }, [])
   let [is_dark, set_is_dark] = useState(retrieve_theme)
 
   useEffect(() => {
@@ -45,9 +52,13 @@ function App() {
   document.body.style.backgroundColor = is_dark ? "black" : "white"
 
   return (
+    
 
-    // This enables us to pass values to the context which can be called anywhere in our program
-    <>
+    
+    is_loading ? <Prelaoder /> : (
+
+      <>
+
     
     <context_theme.Provider value = {[is_dark, handle_toggle]}>
       <div className="app_wrapper" data-theme = {is_dark && "dark"}>
@@ -78,6 +89,11 @@ function App() {
       </div>
       </context_theme.Provider>
     </>
+    )
+
+    // This enables us to pass values to the context which can be called anywhere in our program
+    
+   
   )
 }
 
