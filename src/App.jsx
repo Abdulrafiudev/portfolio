@@ -26,7 +26,7 @@ function App() {
   useEffect(()=> {
     setTimeout(() => {
        set_is_loading(false)
-    }, 10000)
+    }, 2000)
   }, [])
   let [is_dark, set_is_dark] = useState(retrieve_theme)
 
@@ -55,7 +55,7 @@ function App() {
     
 
     
-    is_loading ? <Prelaoder /> : (
+    is_loading ?    <Prelaoder loading={is_loading}/>  : (
 
       <>
 
@@ -88,8 +88,10 @@ function App() {
        
       </div>
       </context_theme.Provider>
+      
     </>
     )
+    
 
     // This enables us to pass values to the context which can be called anywhere in our program
     
