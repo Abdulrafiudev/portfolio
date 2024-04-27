@@ -103,10 +103,14 @@ let Contact = function(){
   return(
     <>
       <div className="contact_container">
-        <div className="left_contact">
+        <motion.div
+            initial={{opacity: 0, x: "-10vw"}}
+            whileInView={{opacity: 1, x: "0"}}
+            transition={{duration:1, }}
+        className="left_contact">
           <span className="left_contact_note"> Get in touch </span>
           <span className="left_contact_detail"> Contact me </span>
-        </div>
+        </motion.div>
         <div className="right_contact">
           <form onSubmit={handle_submit}>
             <input className="form_name" placeholder="Name" name="username" onChange={handle_change} value={email_content.username}></input>

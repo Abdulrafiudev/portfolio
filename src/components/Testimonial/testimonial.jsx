@@ -8,17 +8,21 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import profilePic4 from "../../../public/images/profile4.jpg";
-
+import { motion } from "framer-motion";
 let Testimonial = function(){
   return(
     <>
       <div className="testimonial_wrapper">
-        <div className="t_heading">
+        <motion.div 
+            initial={{opacity: 0, x: "-10vw"}}
+            whileInView={{opacity: 1, x: "0"}}
+            transition={{duration:1, }}
+        className="t_heading">
           <span className="client">Clients always get </span>
           <span className="exceptional_work">Exceptional Work </span>
           <span className="from_me">from me...</span>
          
-        </div>
+        </motion.div>
        
         <Swiper
           modules={[Pagination]}

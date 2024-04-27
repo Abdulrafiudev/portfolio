@@ -13,6 +13,8 @@ body{
   height: 100%;
   width: 100%;
  
+  overflow-x: hidden;
+ 
 }
 #root{
   height: 100%;
@@ -20,6 +22,9 @@ body{
 .app_wrapper{
  
   height: 100%;
+  width: 100%;
+ 
+  overflow-x: hidden;
 
   
   
