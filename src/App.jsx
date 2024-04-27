@@ -27,7 +27,7 @@ function App() {
     }, 3800)
   }, [])
   let [is_dark, set_is_dark] = useState(retrieve_theme)
-
+  // saving dark theme to local storage
   useEffect(() => {
     save_theme()
   }, [is_dark])
