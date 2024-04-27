@@ -2,6 +2,7 @@ import React from "react";
 import "./contact.css"
 import axios from "axios"
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 
 
@@ -17,11 +18,16 @@ let Contact = function(){
 
   let [is_done, set_is_done] = useState(false)
 
+  console.log(is_done)
+ 
   useEffect(() => {
-    if (is_done){
-      form_message()
-    }
-  
+    setTimeout(() => {
+      if (is_done){
+        form_message()
+      }
+    
+    },1000)
+    
   }, [is_done])
 
   function handle_change(event){
@@ -38,6 +44,10 @@ let Contact = function(){
 
   function handle_send(){
     set_is_done(true)
+    setTimeout(() => {
+      set_is_done(false)
+    }, 2000)
+  
   }
 
   function form_message(){
@@ -103,7 +113,11 @@ let Contact = function(){
             <input className="form_email" placeholder="Email" name="email"  onChange={handle_change} value={email_content.email}></input>
             <textarea  className="form_content" placeholder="message" name="message"  onChange={handle_change} value={email_content.message}></textarea>
             <div className="submit_container">
-              <button type="submit" className="submit_button" onClick={handle_send}> send </button>
+              <motion.button 
+                whileHover={{scale: 0.8}}
+                whileTap={{rotate: 25, scale: 1}}
+                transition={{duration: 0.1, }}
+              type="submit" className="submit_button" onClick={handle_send}> send </motion.button>
             </div>
            
             

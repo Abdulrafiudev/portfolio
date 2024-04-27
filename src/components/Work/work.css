@@ -2,7 +2,7 @@
   display: flex;
   width: 90%;
   margin-left: 50px;
-  margin-top: 180px;
+  margin-top: 250px;
   height: 80vh;
 }
 .left_work{
@@ -216,9 +216,9 @@
   .work_container{
     flex-direction: column;
     margin-left: 0;
-    margin-top: 300px;
+    margin-top: 350px;
     width: 100%;
-    margin-bottom: 300px;
+    margin-bottom: 350px;
     
   }
   .left_work{

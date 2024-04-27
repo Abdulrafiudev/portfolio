@@ -5,6 +5,7 @@ import { context_theme } from "../../App";
 import { useContext } from "react";
 import { UilAlignCenter } from '@iconscout/react-unicons'
 import { UilTimesCircle } from '@iconscout/react-unicons'
+import {motion} from "framer-motion"
 
 
 function Header(props){
@@ -22,21 +23,29 @@ function Header(props){
 
       <div className="right_section">
         <ul>
-          <li> Home </li>
-          <li> Services </li>
-          <li> portfolio</li>
-          <li> Testimonial </li>
+          <motion.li whileHover={{backgroundColor:"gray", padding: "6px", borderRadius: "10px"}} whileTap={{rotate: -25}}> Home </motion.li>
+          <motion.li whileHover={{backgroundColor:"gray", padding: "6px", borderRadius: "10px"}} whileTap={{rotate: 25}}> Services </motion.li>
+          <motion.li whileHover={{backgroundColor:"gray", padding: "6px", borderRadius: "10px"}} whileTap={{rotate: -25}}> Experience</motion.li>
+          <motion.li whileHover={{backgroundColor:"gray", padding: "6px", borderRadius: "10px"}} whileTap={{rotate: -25}}> Work</motion.li>
+          <motion.li whileHover={{backgroundColor:"gray", padding: "6px", borderRadius: "10px"}} whileTap={{rotate: -25}}> portfolio</motion.li>
+          <motion.li whileHover={{backgroundColor:"gray", padding: "6px", borderRadius: "10px"}} whileTap={{rotate: 25}}> Testimonial </motion.li>
         </ul>
         <div className="smaller_screen_exit" onClick={handle_exit}>
         <UilTimesCircle />
       </div>
-        <div className="small_contact">
+        <motion.div
+        whileHover={{scale: 0.95}}
+        whileTap={{rotate: 25, scale: 1}}
+        transition={{duration: 0.3, }}
+        className="small_contact">
            
           <button className="contact_button"> Contact us </button>
-        </div>
+        </motion.div>
       </div>
       <div className="smaller_screen_menu" onClick={handle_menu}>
-        <UilAlignCenter className = "menu_icon"/>
+        <UilAlignCenter
+       
+        className = "menu_icon"/>
       </div>
     
      </div>

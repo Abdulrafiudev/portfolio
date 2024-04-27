@@ -12,6 +12,7 @@ import Testimonial from "./components/Testimonial/testimonial"
 import Contact from "./components/contact/contact"
 import Footer from "./components/footer/footer"
 import { createContext } from "react"
+import { motion } from "framer-motion"
 
 //This creates a context
 export let context_theme = createContext()
@@ -61,10 +62,14 @@ function App() {
         </div>
         <Work />
         <Wordings />
-        <div className="portfolio_wrapper">
+        <motion.div 
+        initial={{opacity: 0, x: "-10vw"}}
+        whileInView={{opacity: 1, x: "0"}}
+        transition={{duration:1, }}
+        className="portfolio_wrapper">
           <span className="portfolio_note"> Recent Projects</span>
           <span className="portfolio_detail"> Portfolio </span>
-        </div>
+        </motion.div>
         <Portfolio />
         <Testimonial />
         <Contact />

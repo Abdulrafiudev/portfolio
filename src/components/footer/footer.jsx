@@ -11,9 +11,9 @@ function Footer(){
    <div className="main_box">
     <div className="footer_container">
        <div className="footer_icons">
-        <img src= {github} />
-        <img src= {instagram}/>
-        <img src= {linkedin}/>
+        <a href= "https://github.com/Abdulrafiudev" target = "blank"> <img src= {github} /> </a>
+        <a href= "https://www.instagram.com/abdul.rafiu_._/" target = "blank"> <img src= {instagram}/> </a>
+        <a href= "https://www.linkedin.com/in/abdulrafiudev/" target = "blank"> <img src= {linkedin}/> </a>
        </div>
        <div className="footer_name">
         <span> Abdulrafiu.dev </span>
