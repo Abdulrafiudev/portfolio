@@ -56,7 +56,7 @@ function App() {
           <Header />
           <Intro />
           <Services />
-          <div className="experience_container">
+          <div className="experience_container" id="experience">
             {experience_array.map(experience => {
               return (
                 <Experience
@@ -76,6 +76,7 @@ function App() {
             whileInView={{ opacity: 1, x: "0" }}
             transition={{ duration: 1 }}
             className="portfolio_wrapper"
+            id="portfolio"
           >
             <span className="portfolio_note"> Recent Projects</span>
             <span className="portfolio_detail"> Portfolio </span>

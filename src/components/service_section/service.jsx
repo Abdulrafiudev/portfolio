@@ -1,15 +1,15 @@
-import React from "react";
-import "./service.css";
-import Card from "../card/card";
-import humble from "../../../public/images/humble.png";
-import glasses from "../../../public/images/glasses.png";
-import heart from "../../../public/images/heartemoji.png";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react"
+import "./service.css"
+import Card from "../card/card"
+import humble from "../../../public/images/humble.png"
+import glasses from "../../../public/images/glasses.png"
+import heart from "../../../public/images/heartemoji.png"
+import { motion, AnimatePresence } from "framer-motion"
 
 function Services() {
   return (
     <>
-      <div className="services">
+      <div className="services" id="services">
         <AnimatePresence>
           <motion.div
             initial={{ opacity: 0, x: "-10vw" }}
@@ -65,7 +65,7 @@ function Services() {
         </motion.div>
       </div>
     </>
-  );
+  )
 }
 
-export default Services;
+export default Services

@@ -1,18 +1,18 @@
-import React from "react";
-import clients from "./testimonial_array";
-import "./testimonial.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import profilePic4 from "../../../public/images/profile4.jpg";
-import { motion } from "framer-motion";
+import React from "react"
+import clients from "./testimonial_array"
+import "./testimonial.css"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules"
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import "swiper/css/scrollbar"
+import profilePic4 from "../../../public/images/profile4.jpg"
+import { motion } from "framer-motion"
 let Testimonial = function () {
   return (
     <>
-      <div className="testimonial_wrapper">
+      <div className="testimonial_wrapper" id="testimonial">
         <motion.div
           initial={{ opacity: 0, x: "-10vw" }}
           whileInView={{ opacity: 1, x: "0" }}
@@ -40,12 +40,12 @@ let Testimonial = function () {
                   <span> {client.review}</span>
                 </div>
               </SwiperSlide>
-            );
+            )
           })}
         </Swiper>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Testimonial;
+export default Testimonial

@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 function Work() {
   return (
     <>
-      <div className="work_container">
+      <div className="work_container" id="work">
         <motion.div
           initial={{ opacity: 0, x: "-10vw" }}
           whileInView={{ opacity: 1, x: "0" }}

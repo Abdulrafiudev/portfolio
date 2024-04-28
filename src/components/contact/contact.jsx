@@ -59,7 +59,7 @@ let Contact = function () {
   }
   return (
     <>
-      <div className="contact_container">
+      <div className="contact_container" id="contact_us">
         <motion.div
           initial={{ opacity: 0, x: "-10vw" }}
           whileInView={{ opacity: 1, x: "0" }}
@@ -76,7 +76,7 @@ let Contact = function () {
               placeholder="Name"
               name="username"
               onChange={handle_change}
-              value={email_content.username}
+              jy32value={email_content.username}
               required
             ></input>
             <input

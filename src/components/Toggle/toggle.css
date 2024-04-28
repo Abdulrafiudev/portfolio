@@ -6,6 +6,7 @@
   cursor: pointer;
   padding: 2px;
   position: relative;
+  margin-right: 50px;
 }
 .toggle * {
   width: 1rem;

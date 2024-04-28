@@ -16,7 +16,11 @@ function Intro() {
 
   return (
     <>
-      <div className="intro" style={{ backgroundColor: is_dark && "black" }}>
+      <div
+        className="intro"
+        style={{ backgroundColor: is_dark && "black" }}
+        id="home"
+      >
         <motion.div
           initial={{ opacity: 0, rotate: "-180deg" }}
           whileInView={{ opacity: 1, rotate: "0deg" }}
